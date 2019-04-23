@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>Eric's Nut Butters: Order</title>
+
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Alegreya+Sans+SC:100,300,400,700" rel="stylesheet">
+        <link rel="stylesheet" href="order.css">
+       
+    </head>
+
+    <body>
+        <div class="grid">
+            <header><h1><a href="index.html">Eric's Nut Butters</a></h1></header>
+            <nav id="nav_menu">
+                <ul class="menu-list">
+                    <li><a href="aboutus.html">About Us</a></li>
+                    <li><a href="butters.html">Butters</a></li>
+                    <li><a id="current" href="order.html">Order</a></li>
+                    <li><a href="connect.html">Connect</a></li>
+                </ul>
+            </nav>
+            <main>
+                <form class="pure-form pure-form-stacked">
+                    <fieldset>
+                        <legend>My Nut Butter Order</legend>
+                        <label for="first_name">First Name</label><br>
+                        <input id="first_name" type="name"><br>
+                        <label for="last_name">Last Name</label><br>
+                        <input id="last_name" type="name"><br>
+                        <label for="email" type="email">Email</label><br>
+                        <input id="email" type="email"><br>
+                        <label for="phone" type="tel">Phone Number</label><br>
+                        <input id="phone" type="tel"><br><br>
+                        <label for="peanut">Number of Peanut Butter:</label>
+                        <select name="peanut" id="peanut">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select><br><br>
+                        <label for="almond">Number of Almond Butter:</label>
+                        <select name="almond" id="almond">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select><br><br>
+                        <label for="cashew">Number of Cashew Butter:</label>
+                        <select name="cashew" id="cashew">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select><br><br>
+                        <label for="walnut">Number of Walnut Butter:</label>
+                        <select name="walnut" id="walnut">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select><br><br>
+                        <label for="mac">Number of Macadamia Nut Butter:</label>
+                        <select name="mac" id="mac">
+                            <option value="0">0</option>
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5</option>
+                            <option value="6">6</option>
+                            <option value="7">7</option>
+                            <option value="8">8</option>
+                            <option value="9">9</option>
+                        </select><br><br>
+                        <label for="date" type="date">Pickup Date Request</label><br>
+                        <input id="date" type="date"><br><br>
+                        <label for="pickup">Pickup Location Request:</label>
+                        <select name="pickup" id="pickup">
+                            <option value="farm">Farmer's Market</option>
+                            <option value="dowd">Dowd YMCA</option>
+                            <option value="other">Other</option>
+                        </select><br><br>
+                        <label for="info">Pickup Date and Location Info (if location is other, specify)</label><br>
+                        <textarea rows="3" cols="40" name="info" id="info"></textarea><br><br>
+                        <label for="comment">Comments (including allergies)</label><br>
+                        <textarea rows="3" cols="40" name="comment" id="comment"></textarea><br><br>
+                        <input type="submit" id="order_button" value="Submit">
+                    </fieldset>
+                </form>
+            </main>
+            <footer>
+                <div class="footer_grid">
+                    <div class="icon_list">
+                        <a href="https://twitter.com/EricsNutButters"><i class="fab fa-twitter fa-3x"></i></a>
+                        <a href="https://www.instagram.com/ericsnutbutters/"><i class="fab fa-instagram fa-3x"></i></a>
+                        <a href="https://www.facebook.com/EricsNutButters/"><i class="fab fa-facebook-f fa-3x"></i></a>
+                    </div>
+                    <div class="updates">
+                        <form class="pure-form-stacked" id="email">
+                            <legend>Sign up for updates!</legend>
+                            <label for="emailaddress">Your email address</label>
+                            <input type="text" id="email-box" autofocus><br>
+                            <input type="submit" id="button" value="Submit">
+                        </form> 
+                    </div>
+                </div>
+            </footer>
+        </div>
+    </body> 
+</html>
