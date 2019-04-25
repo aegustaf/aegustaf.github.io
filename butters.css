@@ -316,6 +316,27 @@ i {
     .title {
         font-size: 2.5em;
     }
+
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .price {
+        grid-column: 1;
+        grid-row: 1/2;
+        /* padding-top: 20px; */
+        padding-bottom: 20px;
+    }
+    .description_container {
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .description  {
+        width: 90%;
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
+    }
+
     .footer {
         height: 300px;
         background: black;
@@ -343,5 +364,24 @@ i {
     }
     .title {
         font-size: 2em;
+    }
+    .content {
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+    }
+    .price {
+        grid-column: 1;
+        grid-row: 1/2;
+        /* padding-top: 20px; */
+        padding-bottom: 20px;
+    }
+    .description_container {
+        grid-column: 1;
+        grid-row: 2/3;
+    }
+    .description  {
+        width: 90%;
+        padding-top: 20px;
+        /* padding-bottom: 20px; */
     }
 }
