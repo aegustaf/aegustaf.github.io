@@ -365,4 +365,10 @@ i {
     .title {
         font-size: 2em;
     }
+    .price {
+        font-size: 2em;
+    }
+    .description {
+        font-size: 1em;
+    }
 }
