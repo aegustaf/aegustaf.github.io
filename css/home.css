@@ -233,6 +233,11 @@ label {
     grid-template-columns: 1fr;
     grid-template-rows: auto auto auto;
 }
+@media screen and (min-width: 800px) {
+    .grid {
+        margin-top: 120px;
+    }
+}
 /*--------------------------Main---------------------------*/
 main {
     grid-row: 1/2;
