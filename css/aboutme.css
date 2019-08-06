@@ -258,7 +258,7 @@ main {
 .title-wrap .headline {
     font-size:1.7rem;
     text-transform: uppercase;
-    border-bottom: black solid 3px;
+    border-bottom: #5760AB solid 3px;
 }
 
 .content {
