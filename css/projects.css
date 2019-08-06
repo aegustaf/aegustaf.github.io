@@ -250,63 +250,108 @@ main {
     padding: 0;
 }
 .title-wrap {
-    margin-top: 4rem;
+    height: 10rem;
+    background-image: url("/images/projects-dl.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+.title-wrap .opacity {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    background: rgba(0,0,0,.5);
+}
 .title-wrap .headline {
     font-size:1.7rem;
     text-transform: uppercase;
-    border-bottom: #5760AB solid 3px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-size: 2.5rem;
 }
 .content {
     padding: 3rem 5%;
     margin: 0 auto;
-    width: 80%;
+    width: 90%;
     max-width: 106em;
     display: flex;
     flex-direction: column;
 }
+
 .content .headline {
-    font-size: 1.3rem;
-    text-transform: none;
+    font-size: 1.7rem;
+    padding: .5rem;
+}
+.content .headline hr {
+    color: #5760AB;
+    border-top: 2px solid #5760AB;
+    
+}
+.feature-section {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    flex-wrap: wrap;
 }
 .feature-wrap {
     width: 80%;
-    max-width: 325px;
+    max-width: 300px;
     margin: 0 auto;
-    padding: 1rem;
-    background: #F9C5B1;
+    padding: 1rem 1rem;
+    background: #5760AB;
     margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 2px #fff solid;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);    
+    transition: all .3s ease-in-out;
+}
+.feature-wrap:hover {
+    transform: scale(1.05) translateY(-.5rem);
 }
 .feature {
     text-align: center;
 }
-.feature img {
-    background: #fff;
-    max-width: 300px;
+.feature div {
+    padding: 1rem 0;
 }
-.feature .black img{
-    background: #000;
+.feature .name, .feature a {
+    font-family: 'Quicksand', sans-serif;
+}
+.feature .name {
+    color: #fff;
+    font-size: 1.5rem;
+}
+.feature a {
+    padding: .5rem 1.5rem;
+    text-decoration: none;
+    border: 2px solid #fff;
+    color: #fff;
+    font-size: 1rem;
+    transition: all .25s ease-in-out;
+}
+.feature a:hover {
+    color: #5760AB;
+    background: #fff;
+    border-radius: 25px;
 }
 
 
 
 @media screen and (min-width: 800px) {
+    .title-wrap {
+        height: 16rem;
+    }
     .title-wrap .headline {
-        font-size:2.2rem;
+        font-size: 3rem;
     }
-    .text-wrap .headline {
-        font-size: 1.5rem;
-    }
-    .text-wrap .subheadline {
-        font-size: 1.2rem;
-    }
-    .text-wrap li {
-        font-size: 1rem;
-    }
-    
 }
 /*-------------------Footer---------------------------*/
 footer {
